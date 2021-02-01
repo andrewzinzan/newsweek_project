@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/favicon.png" type="image">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Newsweek</title>
+</head>
+
+<body>
+
+    <nav id="navbar" class="navbar-dark navbar-expand-lg pt-3">
+
+            <div id="nav-top" class="row d-flex justify-content-between">
+                <div id="nav-left" class="col-md-0 col-lg-4">
+                    <div class="container">
+                            <a href="#">
+                                <p>
+                                    <i class='fas fa-cloud-sun'></i>
+                                    17° Dublin, IE
+                                    <i class='fas fa-chevron-right'></i>
+                                </p>
+                            </a>
+                        </p>
+                        <p class="font-weight-light">
+                            Mon, Jun 22, 2020
+                        </p>
+                    </div>
+                </div>
+                <div id="nav-middle" class="col-md-6 col-lg-4 d-flex justify-content-center align-items-center">
+                    <a href="#">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 395.6 60" style="enable-background: new 0 0 395.6 60;" xml:space="preserve">
+                            <g>
+                              <path class="st0" d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7">
+                              </path>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <div id="nav-right" class="col-md-6 col-lg-4">
+                    <div id="blank"></div>
+                    <div class="container d-flex flex-row-reverse justify-content-right">
+                        <button id="bars-btn" class="btn">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="trial-btn" class="btn border-0">
+                            <span class="font-weight-bold">30 DAY FREE TRIAL <i class="fa fa-angle-right"></i></span>
+                        </button>
+                        <button id="id-btn" class="btn font-weight-bold">
+                            LOGIN
+                        </button>
+                        <button id="user-btn" class="btn">
+                            <i class='fas fa-user'></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="nav-bottom" class="navbar-light navbar-expand-lg d-flex pt-2">
+                <div id="red-ting"></div>
+                <div id="nav-bottom-right" class="col-lg-10">
+                    <ul id="nav-list" class="navbar d-flex flex-nowrap justify-content-between align-items-center font-weight-bold">
+                        <li class="nav-item">
+                            <a href="#">U.S.</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">World</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Business</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Tech & Science</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Culture</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Newsgeek</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Sports</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Health</a>
+                        </li>
+                        <li class="nav-item"> 
+                            <a href="#">The Debate</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Vantage</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Weather</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="nav-bottom-left" class="col-lg-2 p-0">
+                    <div id="search-container">
+                        <input class="mt-2" type="search" placeholder="Search">
+                    </div>
+                </div>
+            </div>
+
+            <div id="nav-extra" class="navbar-light d-flex bg-white">
+                <div id="nav-extra-container" class="pl-0 pr-0">
+                    <ul id="nav-extra-list" class="navbar navbar d-flex font-weight-bold list-unstyled text-uppercase bg-white m-0">
+                        <li class="nav-item active">
+                            <a href="#" class="text-dark pl-3 pr-3">Trending</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="text-secondary pl-3 pr-3">Donald Trump</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="text-secondary pl-3 pr-3">Joe Biden</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="text-secondary pl-3 pr-3">China</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="text-secondary pl-3 pr-3">Coronavirus</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="text-secondary pl-3 pr-3">2020 Election</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </nav>
+    
+    <div id="main" class="main container-fluid d-flex pt-3 font-weight-bold p-0">
+        <div class="col-lg-3 col-sm-4">
+            <div id="article-left-1" class="container">
+                <div id="article-title" class="block-title">FEATURED STORIES</div>
+                <div class="article mb-3">
+                    <div id="article-image" class="container-fluid p-0 bg-light">
+                        <div id="article-stamp" class="category">
+                            <a href="#">U.S.</a>
+                        </div>
+                        <div id="article-image">
+                            <a href="#">
+                                <img src="img/whitehouse-img.webp" alt="" class="w-100">
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="pt-2 font-weight-bold">
+                        <a href="#" class="">White House Pushes Back on Report About Russian Bounties on U.S. Soldiers</a>
+                    </h3>
+                    <div class="summary">
+                        The White House called a sudden press briefing to push back on a New York Times report about Russian bounties on U.S. soldiers.
+                    </div>
+                </div>
+                <div class="article mb-3">
+                    <div id="article-image" class="container-fluid p-0 bg-light">
+                        <div id="article-stamp" class="category">
+                            <a href="#">U.S.</a>
+                        </div>
+                        <div id="article-image">
+                            <a href="#">
+                                <img src="img/reopenamerica-img.webp" alt="" class="w-100">
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="pt-2 font-weight-bold">
+                        <a href="#" class="">'Bar Lives Matter' Protesters Descend on Texas Capitol to Oppose Closures</a>
+                    </h3>
+                    <div class="summary">
+                        "No other businesses are being shut down," the protest organizers wrote. "From owners to bartenders, waitresses, entertainers... we will all take the hit."
+                    </div>
+                </div>
+                <div class="article mb-3">
+                    <div id="article-image" class="container-fluid p-0 bg-light">
+                        <div id="article-stamp" class="category">
+                            <a href="#">U.S.</a>
+                        </div>
+                        <div id="article-image">
+                            <a href="#">
+                                <img src="img/biden-img.webp" alt="" class="w-100">
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="pt-2 font-weight-bold">
+                        <a href="#" class="">Biden Says We Should 'Protect' Columbus, Washington and Jefferson Statues</a>
+                    </h3>
+                    <div class="summary">
+                        The former vice president said there is a "distinction" to be made between George Washington, who did own slaves, and Confederate leaders.
+                    </div>
+                </div>
+                <div class="article mb-3">
+                    <div id="article-image" class="container-fluid p-0 bg-light">
+                        <div id="article-stamp" class="category">
+                            <a href="#">NEWS</a>
+                        </div>
+                        <div id="article-image">
+                            <a href="#">
+                                <img src="img/florida-img.webp" alt="" class="w-100">
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="pt-2 font-weight-bold">
+                        <a href="#" class="">Florida Now Requires Parental Consent for Minors Seeking Abortions</a>
+                    </h3>
+                    <div class="summary">
+                        Florida Governor Ron DeSantis on Tuesday signed a bill that sees the state join about half of all U.S. states in requiring that minors obtain parental consent before undergoing abortions.
+                    </div>
+                </div>
+                <div class="article mb-3">
+                    <div id="article-image" class="container-fluid p-0 bg-light">
+                        <div id="article-stamp" class="category">
+                            <a href="#">WORLD</a>
+                        </div>
+                        <div id="article-image">
+                            <a href="#">
+                                <img src="img/un-img.webp" alt="" class="w-100">
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="pt-2 font-weight-bold">
+                        <a href="#" class="">Every U.N. Security Council Member but U.S. Supports Iran Deal at Meeting</a>
+                    </h3>
+                    <div class="summary">
+                        Secretary of State Mike Pompeo took the opportunity to criticize what he called a "flawed" nuclear agreement.
+                    </div>
+                </div>
+                <div class="sponsor mb-4">
+                    <div id="sponsor-image" class="container-fluid p-0 bg-light">
+                        <div id="sponsor-stamp" class="category">
+                            <a href="#">RANKINGS</a>
+                        </div>
+                        <div id="sponsor-image">
+                            <a href="#">
+                                <img src="img/realtors.jpeg" alt="" class="w-100">
+                            </a>
+                        </div>
+                    </div>
+                    <div id="sponsor-info" class="p-4">
+                        <h3 class="font-weight-bold">
+                            <a href="#">America's Best Realtors 2020</a>
+                        </h3>
+                        <div class="summary">
+                            Newsweek partnered with REAL Trends to sort through the data and provide you with a list of America's Best Real Estate Professionals
+                        </div>
+                    </div>
+                </div>
+                <div class="sponsor mb-4">
+                    <div id="sponsor-image" class="container-fluid p-0 bg-light">
+                        <div id="sponsor-image">
+                            <a href="#">
+                                <img src="img/amplify-img.webp" alt="" class="w-100">
+                            </a>
+                        </div>
+                    </div>
+                    <div id="sponsor-info" class="p-4">
+                        <h3 class="font-weight-bold">
+                            <a href="#">Newsweek AMPLIFY Launches Strategic Partnership Solutions for Brands</a>
+                        </h3>
+                        <div class="summary">
+                            Newsweek AMPLIFY, the company's performance marketing business unit, has launched a new program to empower digital brands with comprehensive content marketing and advertising strategies.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-sm-8">
+            <div class="article-middle-1" class="container">
+                <div id="article-title" class="block-title">TOP STORY</div>
+                <div class="article mb-3">
+                    <div id="article-image" class="container-fluid p-0 bg-light">
+                        <div id="article-stamp" class="category">
+                            <a href="#">U.S.</a>
+                        </div>
+                        <div id="article-image">
+                            <a href="#">
+                                <img src="img/texas-img.webp" alt="" class="w-100">
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="pt-2 font-weight-bold">
+                        <a href="#" class="">Texas Daily COVID-19 Cases Top Italy's Record When It Was Global Epicenter</a>
+                    </h3>
+                    <div class="summary">
+                        Amid a surge in new cases of the novel coronavirus, Texas health officials confirmed the state's highest single-day increase to date on Tuesday. The number surpassed Italy's record daily total reported in March, while the country was considered the pandemic's global epicenter.
+                    </div>
+                </div>
+
+                <div class="culture-stories">
+                    <div class="container p-0 m-0">
+                        <div id="article-title" class="block-title">MY TURN</div>
+                        <div class="culture-items d-flex w-100">
+                            <div class="culture-item pr-10">
+                                <div class="image mb-2">
+                                    <a href="#">
+                                        <img src="img/dating-img.webp" alt="" class="w-100">
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <a href="#">
+                                        'I Met My Boyfriend on a Video Date During Lockdown'
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="culture-item pl-10 pr-10">
+                                <div class="image mb-2">
+                                    <a href="#">
+                                        <img src="img/weightloss-img.webp" alt="" class="w-100">
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <a href="#">
+                                        I Lost Nearly 300lbs in Less Than a Year'
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="culture-item pl-10">
+                                <div class="image mb-2">
+                                    <a href="#">
+                                        <img src="img/prisonrap-img.webp" alt="" class="w-100">
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <a href="#">
+                                        'I Spent 11 Years In Prison—And Produced a Rap Album at San Quentin'
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container p-0 m-0">
+                        <div id="article-title" class="block-title">MY TURN</div>
+                        <div class="culture-items d-flex w-100">
+                            <div class="culture-item pr-10">
+                                <div class="culture-item-top">
+                                    <div class="culture-stamp">
+                                        TRAVEL
+                                    </div>
+                                    <div class="culture-image mb-2">
+                                        <a href="#">
+                                            <img src="img/masks-img.webp" alt="" class="w-100">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <a href="#">
+                                        A Look at Cultural Masks Around the World
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="culture-item pl-10 pr-10">
+                                <div class="culture-item-top">
+                                    <div class="culture-stamp">
+                                        BLACK LIVES MATTER
+                                    </div>
+                                    <div class="culture-image mb-2">
+                                        <a href="#">
+                                            <img src="img/georgefloyd-img.webp" alt="" class="w-100">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <a href="#">
+                                        The Art of Protest: Artists Create Images in Support of Black Lives Matter
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="culture-item pl-10">
+                                <div class="culture-item-top">
+                                    <div class="culture-stamp">
+                                        TRAVEL
+                                    </div>
+                                    <div class="culture-image mb-2">
+                                        <a href="#">
+                                            <img src="img/italy-img.webp" alt="" class="w-100">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <a href="#">
+                                        Coronavirus-Free Town in Italy Worries About European Visitors in Reopening
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="more-stories">
+                    <div id="article-title" class="block-title pb-2">
+                        <a href="#>">MORE STORIES</a>
+                    </div>
+                    <div id="more-article" class="container-fluid p-0 m-0">
+                        <article class="clearfix pt-3 pb-3">
+                            <div id="clearfix-image" class="image">
+                                <a href="#">
+                                    <img src="img/trump-img.webp" alt="">
+                                </a>
+                            </div>
+                            <h4 class="font-weight-bold">
+                                <a href="#">Trump Official Says Still an 'Inexcusable' Problem With Coronavirus Testing</a>
+                            </h4>
+                            <div class="summary">
+                                The president has insisted that testing in the U.S. is "much bigger and better" than other countries.
+                            </div>
+                        </article>
+                    </div>
+                    <div id="more-article" class="container-fluid p-0 m-0">
+                        <article class="clearfix pt-3 pb-3">
+                            <div id="clearfix-image" class="image">
+                                <a href="#">
+                                    <img src="img/omar-img.webp" alt="">
+                                </a>
+                            </div>
+                            <h4 class="font-weight-bold">
+                                <a href="#">Ilhan Omar Rallies Unions, Liberal Groups to Fight Primary Challenger</a>
+                            </h4>
+                            <div class="summary">
+                                Omar's primary challenger, Antone Melton-Meaux, has recently received at least $3.2 million in donations, compared with Omar's $471,624.
+                            </div>
+                        </article>
+                    </div>
+                    <div id="more-article" class="container-fluid p-0 m-0">
+                        <article class="clearfix pt-3 pb-3">
+                            <div id="clearfix-image" class="image">
+                                <a href="#">
+                                    <img src="img/dorsey-img.webp" alt="">
+                                </a>
+                            </div>
+                            <h4 class="font-weight-bold">
+                                <a href="#">Twitter Says 130 Accounts Targeted in Hack, Status of DMs Unclear</a>
+                            </h4>
+                            <div class="summary">
+                                The social network's security team is continuing to analyze the scope of the cyberattack believed to have exploited an internal system accessed by a "coordinated social engineering attack."
+                            </div>
+                        </article>
+                    </div>
+                    <div id="more-article" class="container-fluid p-0 m-0">
+                        <article class="clearfix pt-3 pb-3">
+                            <div id="clearfix-image" class="image">
+                                <a href="#">
+                                    <img src="img/president-img.webp" alt="">
+                                </a>
+                            </div>
+                            <h4 class="font-weight-bold">
+                                <a href="#">Coronavirus Deaths Surge in 17 States as Trump Claims Fatalities Down</a>
+                            </h4>
+                            <div class="summary">
+                                Several states across the U.S. have seen a rise in coronavirus-related deaths, since June 1, while President Donald Trump recently made the outdated claim that fatalities from the virus were down "tenfold."
+                            </div>
+                        </article>
+                    </div>
+                    <div id="more-article" class="container-fluid p-0 m-0">
+                        <article class="clearfix pt-3 pb-3">
+                            <div id="clearfix-image" class="image">
+                                <a href="#">
+                                    <img src="img/miami-img.webp" alt="">
+                                </a>
+                            </div>
+                            <h4 class="font-weight-bold">
+                                <a href="#">Record Coronavirus Deaths Reported in Texas and Florida</a>
+                            </h4>
+                            <div class="summary">
+                                The U.S. is the worst-hit country in the world, with more than 3.5 million confirmed cases and over 138,000 recorded deaths.
+                            </div>
+                        </article>
+                    </div>
+                    <div id="more-article" class="container-fluid p-0 m-0">
+                        <article class="clearfix pt-3 pb-3">
+                            <div id="clearfix-image" class="image">
+                                <a href="#">
+                                    <img src="img/airstrike-img.webp" alt="">
+                                </a>
+                            </div>
+                            <h4 class="font-weight-bold">
+                                <a href="#">Iran Threatens Israel, U.S. for 'Lying' About Killing Advisers in Syria</a>
+                            </h4>
+                            <div class="summary">
+                                Israel conducts semi-regular strikes on Iranian forces and their allies across the border in Syria, having vowed not to let Tehran establish a foothold in the war-torn nation.
+                            </div>
+                        </article>
+                    </div>
+                    <div id="more-article" class="container-fluid p-0 m-0">
+                        <article class="clearfix pt-3 pb-3">
+                            <div id="clearfix-image" class="image">
+                                <a href="#">
+                                    <img src="img/fuckerberg-img.webp" alt="">
+                                </a>
+                            </div>
+                            <h4 class="font-weight-bold">
+                                <a href="#">Zuckerberg Criticizes Trump's COVID-19 Response, Says CDC 'Undermined'</a>
+                            </h4>
+                            <div class="summary">
+                                The CEO made the comments during an interview with infectious disease expert Dr. Anthony Fauci.
+                            </div>
+                        </article>
+                    </div>
+                    <div id="more-article" class="container-fluid p-0 m-0">
+                        <article class="clearfix pt-3 pb-3">
+                            <div id="clearfix-image" class="image">
+                                <a href="#">
+                                    <img src="img/trumpmask-img.webp" alt="">
+                                </a>
+                            </div>
+                            <h4 class="font-weight-bold">
+                                <a href="#">Most Americans Would Rather Control COVID-19 Spread Than Protect Economy</a>
+                            </h4>
+                            <div class="summary">
+                                Approval for President Donald Trump's handling of the pandemic is lower among those who would rather control the spread.
+                            </div>
+                        </article>
+                    </div>
+                    <div id="more-article" class="container-fluid p-0 m-0">
+                        <article class="clearfix pt-3 pb-3">
+                            <div id="clearfix-image" class="image">
+                                <a href="#">
+                                    <img src="img/baby-img.webp" alt="">
+                                </a>
+                            </div>
+                            <h4 class="font-weight-bold">
+                                <a href="#">Newborn Baby Gets Coronavirus in Arizona, Mother Tells Parents 'Be Careful'</a>
+                            </h4>
+                            <div class="summary">
+                                Angelica Wendell's sister started developing coronavirus symptoms after visiting the 2-month-old baby.
+                            </div>
+                        </article>
+                    </div>
+                    <div id="more-article" class="container-fluid p-0 m-0">
+                        <article class="clearfix pt-3 pb-3">
+                            <div id="clearfix-image" class="image">
+                                <a href="#">
+                                    <img src="img/maxwell-img.webp" alt="">
+                                </a>
+                            </div>
+                            <h4 class="font-weight-bold">
+                                <a href="#">Inside Ghislaine Maxwell's Jail—Corrupt Staff, Sexual Assaults and Beatings</a>
+                            </h4>
+                            <div class="summary">
+                                While awaiting her Jeffrey Epstein sex abuse trial, Ghislaine Maxwell spends 23 hours each day inside her cell at a "very difficult" jail with a history of abuse and corrupt staff.
+                            </div>
+                        </article>
+                    </div>
+                    <div id="more-article" class="container-fluid p-0 m-0">
+                        <article class="clearfix pt-3 pb-3">
+                            <div id="clearfix-image" class="image">
+                                <a href="#">
+                                    <img src="img/japan-img.webp" alt="">
+                                </a>
+                            </div>
+                            <h4 class="font-weight-bold">
+                                <a href="#">YouTuber Spreads Coronavirus While Filming on Japan's Most Populous Island</a>
+                            </h4>
+                            <div class="summary">
+                                The man reportedly traveled across the country for the video shoot, including in the Yamaguchi Prefecture.
+                            </div>
+                        </article>
+                    </div>
+                    <div id="more-article" class="container-fluid p-0 m-0">
+                        <article class="clearfix pt-3 pb-3">
+                            <div id="clearfix-image" class="image">
+                                <a href="#">
+                                    <img src="img/bank-img.webp" alt="">
+                                </a>
+                            </div>
+                            <h4 class="font-weight-bold">
+                                <a href="#">World Bank Staff Have a New Goal: Boost Incomes in Their Assigned Countries</a>
+                            </h4>
+                            <div class="summary">
+                                As the bank lends billions, chief David Malpass is leading a restructure that puts the focus on policy outcomes.
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="main-right" class="col-lg-3">
+            <div class="the-debate">
+                <div class="container-fluid p-0 m-0">
+                    <div id="article-title" class="block-title pb-1">
+                        <a href="#">THE DEBATE</a>
+                    </div>
+                    <div class="bar mb-2"></div>
+                    <div class="debate-item d-flex pt-10">
+                        <div class="d-flex headshot ai-c">
+                            <a href="#">
+                                <img src="img/joel-img.webp" alt="">
+                            </a>
+                        </div>
+                        <div class="info">
+                            <div class="title">
+                                <a href="#">
+                                    America Was Conceived in Racism
+                                </a>
+                            </div>
+                            <div class="byline">
+                                <span class="font-weight-normal">By </span> Joel L. Daniels
+                            </div>
+                        </div>
+                    </div>
+                    <div class="deco">
+                        <div class="c-vs">VS</div>
+                    </div>
+                    <div class="debate-item d-flex pb-12">
+                        <div class="info">
+                            <div class="title">
+                                <a href="#">
+                                    America Was Not Conceived in Racism
+                                </a>
+                            </div>
+                            <div class="byline">
+                                <span class="font-weight-normal">By </span> Joel L. Daniels
+                            </div>
+                        </div>
+                        <div class="d-flex headshot-2 ai-c">
+                            <a href="#">
+                                <img src="img/williams-img.webp" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+            <div class="opinion mb-4">
+                <div class="container-fluid p-0 m-0">
+                    <div id="article-title" class="block-title pb-1">
+                        <a href="#">OPINION</a>
+                    </div>
+                    <div class="ul">
+                        <li class="d-flex">
+                            <div class="image headshot">
+                                <a href="#">
+                                    <img src="img/hs-neuer.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="info">
+                                <a href="#">Why China Picked Amnesty's Ex-Chief as U.N. Free Speech Monitor</a>
+                                <div class="byline">
+                                    BY HILLEL C. NEUER
+                                </div>
+                            </div>
+                        </li>
+                        <li class="d-flex">
+                            <div class="image headshot">
+                                <a href="#">
+                                    <img src="img/hs-fleisher.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="info">
+                                <a href="#">A Jewish State Beats Peter Beinart's Bi-Nationalism</a>
+                                <div class="byline">
+                                    BY YISHAI FLEISHER
+                                </div>
+                            </div>
+                        </li>
+                        <li class="d-flex">
+                            <div class="image headshot">
+                                <a href="#">
+                                    <img src="img/hs-jennifer.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="info">
+                                <a href="#">I'm Not a Liberal. But I Choose Reality Over President Trump</a>
+                                <div class="byline">
+                                    BY JENNIFER SHULKIN
+                                </div>
+                            </div>
+                        </li>
+                        <li class="d-flex">
+                            <div class="image headshot">
+                                <a href="#">
+                                    <img src="img/hs-asad.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="info">
+                                <a href="#">Kashmir Looks to America for Moral Leadership</a>
+                                <div class="byline">
+                                    BY ASAD M. KHAN
+                                </div>
+                            </div>
+                        </li>
+                        <li class="d-flex">
+                            <div class="image headshot">
+                                <a href="#">
+                                    <img src="img/hs-kelsey.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="info">
+                                <a href="#">The Military Does Try to Prevent Sexual Violence. It's Just Too Late</a>
+                                <div class="byline">
+                                    BY KELSEY BAKER
+                                </div>
+                            </div>
+                        </li>
+                        <li class="d-flex">
+                            <div class="image headshot">
+                                <a href="#">
+                                    <img src="img/hs-derrick.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="info">
+                                <a href="#">Politicians Who Say Black Lives Matter: Put Your Budget Where Your Mouth Is</a>
+                                <div class="byline">
+                                    BY JUDITH K. DIMON AND DERRICK H. LEWIS
+                                </div>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+            </div>
+            <div class="sponsor mb-4">
+                <div id="sponsor-image" class="container-fluid p-0 bg-light">
+                    <div id="sponsor-stamp" class="category">
+                        <a href="#">SPONSORED INSIGHT</a>
+                    </div>
+                    <div id="sponsor-image">
+                        <a href="#">
+                            <img src="img/computeryoungfla-img.webp" alt="" class="w-100">
+                        </a>
+                    </div>
+                </div>
+                <div id="sponsor-info" class="p-4">
+                    <h3 class="font-weight-bold">
+                        <a href="#">Best Infection Prevention Products</a>
+                    </h3>
+                    <div class="summary">
+                        During the coronavirus outbreak, health care is more important than ever. In Newsweek's first Best Health Care series, we highlight the best infection prevention products.
+                    </div>
+                </div>
+            </div>
+            <div class="newsletter-signup">
+                <div class="n-title container p-0 m-0 d-flex ai-c text-uppercase mb-15">
+                    <span class="n-icon"></span>
+                    Start your day with our top 5 articles
+                </div>
+                <form class="free-signup">
+                    <input type="text" class="form-text" placeholder="Email address">
+                    <input type="submit" class="form-submit" value="Free Sign Up">
+                </form>
+            </div>
+            <div class="sponsor mb-4">
+                <div id="sponsor-image" class="container-fluid p-0 mb-3 bg-light">
+                    <div id="sponsor-image">
+                        <a href="#">
+                            <img src="img/nursinghomes2-img.png" alt="" class="w-100">
+                        </a>
+                    </div>
+                </div>
+                <div id="sponsor-info" class="p-4">
+                    <h3 class="font-weight-bold">
+                        <a href="#">Best Nursing Homes 2021</a>
+                    </h3>
+                    <div class="summary">
+                        Newsweek is partnering with the respected global data research firm Statista Inc. to establish a ranking of Best Nursing Homes 2021. If you work in this field, please participate in our survey.
+                    </div>
+                </div>
+            </div>
+            <div class="sponsor mb-4">
+                <div id="sponsor-image" class="container-fluid p-0 bg-light">
+                    <div id="sponsor-stamp" class="category">
+                        <a href="#">RANKINGS</a>
+                    </div>
+                    <div id="sponsor-image">
+                        <a href="#">
+                            <img src="img/infectionbanner-img.webp" alt="" class="w-100">
+                        </a>
+                    </div>
+                </div>
+                <div id="sponsor-info" class="p-4">
+                    <h3 class="font-weight-bold">
+                        <a href="#">Best Infection Prevention Products</a>
+                    </h3>
+                    <div class="summary">
+                        During the coronavirus outbreak, health care is more important than ever. In Newsweek's first Best Health Care series, we highlight the best infection prevention products.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-bottom">
+        <div class="page-bottom-banner container-fluid p-0 m-0 d-flex ai-c jc-c">
+                <span class="n-icon"></span> IN THE MAGAZINE
+        </div>
+        <div class="magazine-wrapper d-flex ai-c row">
+            <div class="col-3 mag-left">
+                <div class="wrap">
+                    <div class="image">
+                        <a href="#">
+                            <img src="img/mag-utility.webp" alt="">
+                        </a>
+                    </div>
+                    <div class="category">
+                        <a href="#">August 07 ISSUE</a>
+                    </div>
+                </div>
+                <a href="#" class="features-btn">See All Features <i style="font-size:24px" class="fa">&#xf105;</i></a>
+            </div>
+            <div class="col-9 mag-right">
+                <article class="row">
+                    <article class="col-4">
+                        <div class="image">
+                            <img src="img/kushner-img.webp" alt="">
+                        </div>
+                        <div class="category pt-2">
+                            <span class="mag-cat">Cover</span>
+                            <span class="cat">
+                                <a href="#">News</a>
+                            </span>
+                        </div>
+                        <h5 class="pt-2">
+                            <a href="#" class="font-weight-bold">Exclusive: Kushner Gets Candid On Troubled Trump Campaign, Mideast, More</a>
+                        </h5>
+                    </article>
+                    <article class="col-4">
+                        <div class="image">
+                            <img src="img/dragon-img.webp" alt="">
+                        </div>
+                        <div class="category pt-2">
+                            <span class="mag-cat">Features</span>
+                            <span class="cat">
+                                <a href="#">News</a>
+                            </span>
+                        </div>
+                        <h5 class="pt-2">
+                            <a href="#" class="font-weight-bold">How China Co-opts Hollywood</a>
+                        </h5>
+                    </article>
+                    <article class="col-4">
+                        <div class="image">
+                            <img src="img/supreme-img.webp" alt="">
+                        </div>
+                        <div class="category pt-2">
+                            <span class="mag-cat">Periscope</span>
+                            <span class="cat">
+                                <a href="#">News</a>
+                            </span>
+                        </div>
+                        <h5 class="pt-2">
+                            <a href="#" class="font-weight-bold">The Supreme Court's Culture War Whiplash Is All in Your Head</a>
+                        </h5>
+                    </article>
+                </div>
+            </div>
+            <div class="magazine-wrapper d-flex ai-c row">
+                <article class="col-3">
+                    <div class="image">
+                        <img src="img/bunker-img.webp" alt="">
+                    </div>
+                    <div class="category pt-2">
+                        <span class="mag-cat">Periscope</span>
+                        <span class="cat">
+                            <a href="#">Culture</a>
+                        </span>
+                    </div>
+                    <h5 class="pt-2">
+                        <a href="#" class="font-weight-bold">A Look Inside the Luxury Bunker Built by Doomsday Preppers for the Apocalypse</a>
+                    </h5>
+                </article>
+                <article class="col-3">
+                    <div class="image">
+                        <img src="img/zack-img.webp" alt="">
+                    </div>
+                    <div class="category pt-2">
+                        <span class="mag-cat">Downtime</span>
+                        <span class="cat">
+                            <a href="#">Culture</a>
+                        </span>
+                    </div>
+                    <h5 class="pt-2">
+                        <a href="#" class="font-weight-bold">If TikTok is Banned, We Move to the Next Big Thing, Zach King Says</a>
+                    </h5>
+                </article>
+                <article class="col-3"></article>
+                <article class="col-3"></article>
+            </div>
+            <div class="subscribe-block pt-5">
+                <div class="row">
+                    <div class="col-7">
+                        <div class="block-title text-uppercase text-danger font-weight-bold pb-2">Subscribe</div>
+                        <div class="col-l d-flex ai-c">
+                            <div class="fn image">
+                                <div class="mag-thumb prev">
+                                    <img src="img/trump-fingers-img.jpg" alt="">
+                                </div>
+                                <div class="mag-thumb current">
+                                    <img src="img/epidemic-img.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="f1 info">
+                                <h3>In-depth Stories You Don't See Elsewhere About Topics You Want to Read!</h3>
+                                <p>
+                                    All Access + Weekly Delivery.
+                                    <br>
+                                    Choose A Membership That's Perfect for You!
+                                </p>
+                                <button class="pelcro-subscribe-button">
+                                    Subscribe
+                                    <i class='fas fa-chevron-right'></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="block-title text-uppercase text-danger font-weight-bold pb-2">Newsletter</div>
+                        <div class="col-r d-flex f1">
+                            <div class="fn image lazyloaded">
+
+                            </div>
+                            <div class="f1 info">
+                                <h3 class="font-weight-bold">The Starting 5</h3>
+                                <p>See why nearly a quarter of a million subscribers begin their day with the Starting 5.</p>
+                                <form class="free-signup">
+                                    <input type="text" class="form-text" placeholder="Email address">
+                                    <input type="submit" class="form-submit" value="Free Sign Up">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-footer">
+        <div class="content">
+            <div class="container-fluid">
+                <div class="d-flex jc-sb ai-fe">
+                    <div class="d-flex ai-fe">
+                        <a href="#" class="brand">
+                            <img src="img/newsweek-logo-img.jpg" alt="">
+                        </a>
+                        <p class="copyright">© 2020 Newsweek</p>
+                    </div>
+                    <ul class="social d-flex ai-fe">
+                        <li>
+                            <a href="">
+                                <i style="font-size:24px" class="fa">&#xf082;</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i style="font-size:24px" class="fa">&#xf099;</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i style="font-size:24px" class="fa">&#xf16d;</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i style="font-size:24px" class="fa">&#xf173;</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i style="font-size:24px" class="fa">&#xf0e1;</i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="http://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <script>
+        // Get the current year for the copyright
+        $('#year').text(new Date().getFullYear());
+    </script>
+</body>
+</html>
